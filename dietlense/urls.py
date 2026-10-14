@@ -28,5 +28,6 @@ urlpatterns = [
     path('user/<int:pk>',UserRetriveView.as_view()),
     path('food-create',FoodCreateView.as_view()),
     path('food/<int:pk>',FoodRetrieveView.as_view()),
-    path('foods/<int:pk>',FoodDeleteView.as_view())
+    path('foods/<int:pk>',FoodDeleteView.as_view()),
+    path('summary',DietSummary.as_view())
 ]
